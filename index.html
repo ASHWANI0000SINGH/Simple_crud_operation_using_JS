@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration_form</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Regestration_form</h1>
+        <hr>
+        <div class="inner_container">
+
+            <form onsubmit="event.preventDefault();onFormSubmit() ;resetForm() ;">
+                <input type="text" name="fullName" id="fullName" placeholder="Name"> <br>
+
+                <input type="email" name="eamil" id="email" placeholder="Email"><br>
+
+                <input type="tel" name="ph_number" id="ph_number" placeholder="contact"> <br>
+
+                <input type="number" name="age" id="age" placeholder="Age"> <br> <br>
+
+                <label for="">Choose Gender</label> <br>
+                <input type="radio" id="gender_Male">
+                <label for="gender_Male">Male</label>
+
+                <input type="radio" id="gender_Female">
+                <label for="gender_Female">Female</label> <br> <br>
+
+                <label for="Course"> Choose Course</label> <br>
+
+                <input type="checkbox" name="course" id="react" value="react">
+                <label for="react">React</label>
+
+                <input type="checkbox" name="course" id="node" value="node">
+                <label for="node">Node:</label>
+
+                <input type="checkbox" name="course" id="java" value="java">
+                <label for="java">java</label> <br>
+
+
+
+                <!-- <label for="address">Address:</label> -->
+                <textarea name="address" id="address" cols="40" rows="5" placeholder="Address"></textarea> <br>
+
+                <input type="submit" value="submit">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container_table">
+        <table id="myTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Age</th>
+                <th>Action</th>
+
+            </tr>
+
+            <tr>
+                <td id="table_name">Ashwani</td>
+                <td id="table_email"> a@gmail.com</td>
+                <td id="table_phone_no">7019615761</td>
+                <td id="table_age">24</td>
+                <td>
+                    <a:href> <button style="background-color: orange;">Edit</button> <button
+                            style="background-color: red;">Delete</button> </a:href>
+                </td>
+
+
+            </tr>
+
+
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
